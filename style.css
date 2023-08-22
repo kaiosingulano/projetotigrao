@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Libre+Caslon+Text&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.pai {
+    margin: 3% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+.titulo {
+    font-size: 28px;
+    font-family: 'Krona One', sans-serif;
+}
+body {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+footer {
+    font-size: 10px;
+    color:white
+}
+.rata {
+    color: orangered;
+}
+.butao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.lei {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background-color: orange;
+    border: 8px groove orangered;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 16px;
+    font-family: 'Krona One', sans-serif;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+.doguinho {
+    border-radius: 30px;
+    border: 8px groove orangered
+}
+.doacao {
+    font-size: 14px;
+    font-family: 'Krona One', sans-serif;
+}
+.link:hover {
+    background-color: lightsalmon;
+}
+.imagem {
+    position: relative;
+}
+.surpresa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    border-radius: 30px;
+    border: 8px groove orangered
+}
+.imagem:hover .surpresa {
+    display: inline;   
+}
+.corpo {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+.rodape {
+    text-align: right;
+}
+.cabecalho {
+    padding: 2% 0 0 0%;
+    display: flex;
+    justify-content: center;
+}
+.cabecalho_link {
+    display: flex;
+    gap:60px;
+}
+.home{
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: orangered;
+    text-decoration: none;
+}
+.legal{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.termos{
+    color: orangered;
+    text-decoration: none;
+}
+@media (max-width:600px){
+    .cabecalho{
+        padding: 10% 0% 6% 0%;
+        display: flex;
+        justify-content: center;
+    }
+    .pai{
+        padding: 3% 1%;
+    }
+    .texto{
+        width:auto;
+    }
+    .corpo{
+        flex-direction: column-reverse;
+    }
+}
